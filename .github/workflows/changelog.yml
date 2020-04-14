@@ -19,8 +19,6 @@ jobs:
         
     - name: Write output to CHANGELOG.md
       run: |
-        echo "Content of /github/workspace/:"
-        ls -la /github/workspace/
         echo "Current directory:"
         pwd -P
         echo "Content of current directory:"
