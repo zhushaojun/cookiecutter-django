@@ -25,4 +25,3 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         commit-message: 'Update Changelog'
-        files: CHANGELOG.md
