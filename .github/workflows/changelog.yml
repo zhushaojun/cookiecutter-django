@@ -16,3 +16,10 @@ jobs:
       uses: heinrichreimer/action-github-changelog-generator@v2.1.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: push
+      uses: github-actions-x/commit@v2.5
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'Update Changelog'
+        files: CHANGELOG.md
