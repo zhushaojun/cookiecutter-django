@@ -19,15 +19,17 @@ jobs:
         
     - name: Write output to CHANGELOG.md
       run: |
-        echo "Current directory:"
-        pwd -P
-        echo "Content of current directory:"
-        ls -la
         echo "${{ steps.generate-changelog.outputs.changelog }}" > CHANGELOG.md
-        git status
+        cat CHANGELOG.md
+        
+    - name: Commit changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git commit -m "Update Changelog" -a
 
-    - name: push
-      uses: github-actions-x/commit@v2.5
+    - name: Push
+      uses: ad-m/github-push-action@v0.5.0
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: 'Update Changelog'
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: changelog-generator
