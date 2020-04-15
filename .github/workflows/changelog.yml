@@ -22,9 +22,14 @@ jobs:
         
     - name: Commit changes
       run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -m "Update Changelog" -a
+        if [ -n "$(git status --short)" ]
+        then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git commit -m "Update Changelog" -a
+        else
+          echo "No changes to commit - skipping"
+        fi
 
     - name: Push
       uses: ad-m/github-push-action@v0.5.0
