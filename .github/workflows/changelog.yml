@@ -19,13 +19,11 @@ jobs:
     - name: Check that everything worked
       run: |
         git status
-        cat CHANGELOG.md
         
     - name: Commit changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git add .
         git commit -m "Update Changelog" -a
 
     - name: Push
