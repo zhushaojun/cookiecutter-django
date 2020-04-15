@@ -198,6 +198,7 @@
 
 - Opbeat sunset [\#1516](https://github.com/pydanny/cookiecutter-django/issues/1516)
 - tox.ini out of sync with requirements.txt [\#1494](https://github.com/pydanny/cookiecutter-django/issues/1494)
+- Add other database support like MySQL and No-SQL database like MongoDB? [\#1261](https://github.com/pydanny/cookiecutter-django/issues/1261)
 - CELERY\_BROKER\_URL overriden in entrypoint.sh [\#1235](https://github.com/pydanny/cookiecutter-django/issues/1235)
 - Fix the build [\#899](https://github.com/pydanny/cookiecutter-django/issues/899)
 - psycopg2 not installed with Windows 10 + Docker [\#841](https://github.com/pydanny/cookiecutter-django/issues/841)
@@ -223,7 +224,6 @@
 - Refactor gunicorn -w to be set from WEB\_CONCURRENCY env [\#1480](https://github.com/pydanny/cookiecutter-django/issues/1480)
 - Use AWS roles instead of AWS\_ACCESS\_KEY\_ID/AWS\_SECRET\_ACCESS\_KEY [\#1453](https://github.com/pydanny/cookiecutter-django/issues/1453)
 - Refactor & clean up infrastructure configuration files [\#1315](https://github.com/pydanny/cookiecutter-django/issues/1315)
-- Add other database support like MySQL and No-SQL database like MongoDB? [\#1261](https://github.com/pydanny/cookiecutter-django/issues/1261)
 - Upgrade docker and docker-compose deployed by Travis [\#1199](https://github.com/pydanny/cookiecutter-django/issues/1199)
 - Why use  ./compose/django/entrypoint.sh for postgres-related set ups?  [\#1114](https://github.com/pydanny/cookiecutter-django/issues/1114)
 - Fix newlines madness [\#667](https://github.com/pydanny/cookiecutter-django/issues/667)
