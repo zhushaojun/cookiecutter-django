@@ -10,11 +10,14 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
+    - name: Make sure cache folder exists
+      run: mkdir -p .cache
     
     - name: Cache
       uses: actions/cache@v1.1.2
       with:
-        path: .cache/
+        path: .cache
         key: cookiecutter-django
         
     - name: Generate changelog content
