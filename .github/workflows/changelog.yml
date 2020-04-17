@@ -16,7 +16,6 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         author: true
-        pullRequests: true
         unreleased: true
         unreleasedLabel: "On master:"
 
