@@ -10,13 +10,20 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Cache
+      uses: actions/cache@v1.1.2
+      with:
+        path: .cache/
 
     - name: Generate changelog content
       uses: heinrichreimer/action-github-changelog-generator@v2.1.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        sinceTag: 2.2.7
-        pullRequests: true
+        cacheFile: .cache/github-changelog-cache
+        cacheLog: .cache/github-changelog-logger.log
+        # sinceTag: 2.2.7
+        # pullRequests: true
         unreleased: true
         unreleasedLabel: "On master:"
 
@@ -30,6 +37,7 @@ jobs:
         then
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          git add .
           git commit -m "Update Changelog" -a
         else
           echo "No changes to commit - skipping"
