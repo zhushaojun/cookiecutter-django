@@ -15,7 +15,8 @@ jobs:
       uses: heinrichreimer/action-github-changelog-generator@v2.1.1
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
-        author: true
+        sinceTag: 2.2.7
+        pullRequests: true
         unreleased: true
         unreleasedLabel: "On master:"
 
