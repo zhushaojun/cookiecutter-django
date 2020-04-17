@@ -2,11 +2,19 @@
 
 ## [3.0.5](https://github.com/pydanny/cookiecutter-django/tree/3.0.5) (2020-04-01)
 
-**Closed issues:**
+**Breaking changes:**
 
 - Django 3.0 support [\#2352](https://github.com/pydanny/cookiecutter-django/issues/2352)
 
 ## [3.0.4](https://github.com/pydanny/cookiecutter-django/tree/3.0.4) (2020-03-23)
+
+**Implemented enhancements:**
+
+- Improve mail service + cloud provider combinations [\#2492](https://github.com/pydanny/cookiecutter-django/issues/2492)
+- Celery Flower is not configured for Traefik [\#2394](https://github.com/pydanny/cookiecutter-django/issues/2394)
+- Using WhiteNoise in development when it's enabled? [\#2303](https://github.com/pydanny/cookiecutter-django/issues/2303)
+- Add pre-commit for generated project [\#2171](https://github.com/pydanny/cookiecutter-django/issues/2171)
+- Add an option to choose default email backend \(AWS SES or Mailgun\) [\#2140](https://github.com/pydanny/cookiecutter-django/issues/2140)
 
 **Fixed bugs:**
 
@@ -18,13 +26,8 @@
 
 **Closed issues:**
 
-- Improve mail service + cloud provider combinations [\#2492](https://github.com/pydanny/cookiecutter-django/issues/2492)
-- Celery Flower is not configured for Traefik [\#2394](https://github.com/pydanny/cookiecutter-django/issues/2394)
 - Proposal to use python-slim instead of python-alpine [\#2373](https://github.com/pydanny/cookiecutter-django/issues/2373)
-- Using WhiteNoise in development when it's enabled? [\#2303](https://github.com/pydanny/cookiecutter-django/issues/2303)
 - Upgrade to Traefik v2 [\#2263](https://github.com/pydanny/cookiecutter-django/issues/2263)
-- Add pre-commit for generated project [\#2171](https://github.com/pydanny/cookiecutter-django/issues/2171)
-- Add an option to choose default email backend \(AWS SES or Mailgun\) [\#2140](https://github.com/pydanny/cookiecutter-django/issues/2140)
 - Add isort [\#2123](https://github.com/pydanny/cookiecutter-django/issues/2123)
 - Remove coreapi requirement [\#1969](https://github.com/pydanny/cookiecutter-django/issues/1969)
 - Migrate to Pathlib [\#1559](https://github.com/pydanny/cookiecutter-django/issues/1559)
@@ -32,24 +35,24 @@
 
 ## [2.2.7](https://github.com/pydanny/cookiecutter-django/tree/2.2.7) (2019-11-04)
 
+**Implemented enhancements:**
+
+- Look to implement django-q [\#2191](https://github.com/pydanny/cookiecutter-django/issues/2191)
+
 **Fixed bugs:**
 
 - Traefik's configuration parameters are not valid in newer version [\#2258](https://github.com/pydanny/cookiecutter-django/issues/2258)
 
-**Closed issues:**
-
-- Look to implement django-q [\#2191](https://github.com/pydanny/cookiecutter-django/issues/2191)
-
 ## [2.2.6-01](https://github.com/pydanny/cookiecutter-django/tree/2.2.6-01) (2019-10-06)
+
+**Breaking changes:**
+
+- Python 3.7 support [\#2236](https://github.com/pydanny/cookiecutter-django/issues/2236)
 
 **Fixed bugs:**
 
 - No staticfile storage with GCP without Whitenoise [\#2250](https://github.com/pydanny/cookiecutter-django/issues/2250)
 - Broken static files with whitenoise=n & cloud\_provider=none [\#2249](https://github.com/pydanny/cookiecutter-django/issues/2249)
-
-**Closed issues:**
-
-- Python 3.7 support [\#2236](https://github.com/pydanny/cookiecutter-django/issues/2236)
 
 ## [2.2.6](https://github.com/pydanny/cookiecutter-django/tree/2.2.6) (2019-10-01)
 
@@ -96,6 +99,11 @@
 
 ## [2.0.13-02](https://github.com/pydanny/cookiecutter-django/tree/2.0.13-02) (2019-04-16)
 
+**Implemented enhancements:**
+
+- kubernetes with simply non-secure [\#1948](https://github.com/pydanny/cookiecutter-django/issues/1948)
+- Add Google Cloud Storage Option in addition to current AWS S3 options [\#1053](https://github.com/pydanny/cookiecutter-django/issues/1053)
+
 **Fixed bugs:**
 
 - Kombu==4.4.0 breaks celery / redis implementation Docker [\#1954](https://github.com/pydanny/cookiecutter-django/issues/1954)
@@ -109,7 +117,6 @@
 - Documentation needs to be updated to add details on Google Cloud Storage [\#2026](https://github.com/pydanny/cookiecutter-django/issues/2026)
 - Add utility/requirements-bionic.apt [\#1973](https://github.com/pydanny/cookiecutter-django/issues/1973)
 - Dead link in .gitignore comment [\#1972](https://github.com/pydanny/cookiecutter-django/issues/1972)
-- kubernetes with simply non-secure [\#1948](https://github.com/pydanny/cookiecutter-django/issues/1948)
 - Cookiecutter Django does not support Python 2.... [\#1942](https://github.com/pydanny/cookiecutter-django/issues/1942)
 - Replace django-environ library [\#1910](https://github.com/pydanny/cookiecutter-django/issues/1910)
 - Migrate to the unified Sentry Python SDK [\#1818](https://github.com/pydanny/cookiecutter-django/issues/1818)
@@ -121,7 +128,6 @@
 - In production Caddy is throwing duplicate address error  [\#1622](https://github.com/pydanny/cookiecutter-django/issues/1622)
 - Teach Travis to black Cookiecutter Django code [\#1603](https://github.com/pydanny/cookiecutter-django/issues/1603)
 - add pylint-common and pylint-django to requirements/local.txt [\#1590](https://github.com/pydanny/cookiecutter-django/issues/1590)
-- Add Google Cloud Storage Option in addition to current AWS S3 options [\#1053](https://github.com/pydanny/cookiecutter-django/issues/1053)
 - Write test that creates/checks a matrix of all y/n option combinations [\#591](https://github.com/pydanny/cookiecutter-django/issues/591)
 - Verify, revise, and improve docs/deployment-with-docker.rst [\#566](https://github.com/pydanny/cookiecutter-django/issues/566)
 - Update Heroku deploy docs to include optional integrations \(Celery, Sentry, ...\) [\#449](https://github.com/pydanny/cookiecutter-django/issues/449)
@@ -198,7 +204,6 @@
 
 - Opbeat sunset [\#1516](https://github.com/pydanny/cookiecutter-django/issues/1516)
 - tox.ini out of sync with requirements.txt [\#1494](https://github.com/pydanny/cookiecutter-django/issues/1494)
-- Add other database support like MySQL and No-SQL database like MongoDB? [\#1261](https://github.com/pydanny/cookiecutter-django/issues/1261)
 - CELERY\_BROKER\_URL overriden in entrypoint.sh [\#1235](https://github.com/pydanny/cookiecutter-django/issues/1235)
 - Fix the build [\#899](https://github.com/pydanny/cookiecutter-django/issues/899)
 - psycopg2 not installed with Windows 10 + Docker [\#841](https://github.com/pydanny/cookiecutter-django/issues/841)
@@ -224,6 +229,7 @@
 - Refactor gunicorn -w to be set from WEB\_CONCURRENCY env [\#1480](https://github.com/pydanny/cookiecutter-django/issues/1480)
 - Use AWS roles instead of AWS\_ACCESS\_KEY\_ID/AWS\_SECRET\_ACCESS\_KEY [\#1453](https://github.com/pydanny/cookiecutter-django/issues/1453)
 - Refactor & clean up infrastructure configuration files [\#1315](https://github.com/pydanny/cookiecutter-django/issues/1315)
+- Add other database support like MySQL and No-SQL database like MongoDB? [\#1261](https://github.com/pydanny/cookiecutter-django/issues/1261)
 - Upgrade docker and docker-compose deployed by Travis [\#1199](https://github.com/pydanny/cookiecutter-django/issues/1199)
 - Why use  ./compose/django/entrypoint.sh for postgres-related set ups?  [\#1114](https://github.com/pydanny/cookiecutter-django/issues/1114)
 - Fix newlines madness [\#667](https://github.com/pydanny/cookiecutter-django/issues/667)
@@ -235,8 +241,14 @@
 
 ## [1.11.9](https://github.com/pydanny/cookiecutter-django/tree/1.11.9) (2018-01-15)
 
+**Breaking changes:**
+
+- Modify 'django-storages-redux' to 'django-storages', and 'boto' to 'boto3', in production.txt requirements file. [\#998](https://github.com/pydanny/cookiecutter-django/issues/998)
+
 **Fixed bugs:**
 
+- storages with S3 doesn't work without DEFAULT\_FILE\_STORAGE setting [\#1192](https://github.com/pydanny/cookiecutter-django/issues/1192)
+- ImproperlyConfiguredException, could not load boto3 S3 bindings when running collectstatic in heroku [\#1050](https://github.com/pydanny/cookiecutter-django/issues/1050)
 - Generated project's .gitignore file contains unresolved cookiecutter template tags [\#1035](https://github.com/pydanny/cookiecutter-django/issues/1035)
 
 **Closed issues:**
