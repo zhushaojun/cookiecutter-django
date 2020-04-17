@@ -15,7 +15,8 @@ jobs:
       uses: actions/cache@v1.1.2
       with:
         path: .cache/
-
+        key: cookiecutter-django
+        
     - name: Generate changelog content
       uses: heinrichreimer/action-github-changelog-generator@v2.1.1
       with:
