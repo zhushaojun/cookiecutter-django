@@ -10,7 +10,7 @@ services:
       context: .
       dockerfile: ./compose/local/django/Dockerfile
     image: {{ cookiecutter.project_slug }}_local_django
-    container_name: django
+    container_name: {{ cookiecutter.project_slug }}_django
     depends_on:
       - postgres
       {%- if cookiecutter.use_mailhog == 'y' %}
@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: ./compose/production/postgres/Dockerfile
     image: {{ cookiecutter.project_slug }}_production_postgres
-    container_name: postgres
+    container_name: {{ cookiecutter.project_slug }}_postgres
     volumes:
       - local_postgres_data:/var/lib/postgresql/data
       - local_postgres_data_backups:/backups

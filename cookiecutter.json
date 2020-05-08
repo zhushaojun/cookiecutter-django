@@ -2,9 +2,9 @@
   "project_name": "My Awesome Project",
   "project_slug": "{{ cookiecutter.project_name.lower()|replace(' ', '_')|replace('-', '_')|replace('.', '_')|trim() }}",
   "description": "Behold My Awesome Project!",
-  "author_name": "Daniel Roy Greenfeld",
+  "author_name": "Shaojun Zhu",
   "domain_name": "example.com",
-  "email": "{{ cookiecutter.author_name.lower()|replace(' ', '-') }}@example.com",
+  "email": "shj.zhu@gmail.com",
   "version": "0.1.0",
   "open_source_license": [
     "MIT",
@@ -26,9 +26,9 @@
     "Gulp"
   ],
   "cloud_provider": [
+    "None",
     "AWS",
-    "GCP",
-    "None"
+    "GCP"
   ],
   "mail_service": [
     "Mailgun",
@@ -45,9 +45,9 @@
   "use_drf": "y",
   "custom_bootstrap_compilation": "n",
   "use_compressor": "n",
-  "use_celery": "n",
+  "use_celery": "y",
   "use_mailhog": "n",
-  "use_sentry": "n",
+  "use_sentry": "y",
   "use_whitenoise": "y",
   "use_heroku": "n",
   "ci_tool": [
@@ -57,5 +57,5 @@
   ],
   "keep_local_envs_in_vcs": "y",
 
-  "debug": "n"
+  "debug": "y"
 }
