@@ -46,7 +46,7 @@
   "custom_bootstrap_compilation": "n",
   "use_compressor": "n",
   "use_celery": "y",
-  "use_mailhog": "n",
+  "use_mailhog": "y",
   "use_sentry": "y",
   "use_whitenoise": "y",
   "use_heroku": "n",
