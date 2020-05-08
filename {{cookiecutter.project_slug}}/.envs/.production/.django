@@ -66,6 +66,6 @@ REDIS_URL=redis://redis:6379/0
 # ------------------------------------------------------------------------------
 
 # Flower
-CELERY_FLOWER_USER=!!!SET CELERY_FLOWER_USER!!!
-CELERY_FLOWER_PASSWORD=!!!SET CELERY_FLOWER_PASSWORD!!!
+CELERY_FLOWER_USER=KfhTPUEPwfFyXnva
+CELERY_FLOWER_PASSWORD=hIaeOPQENWirz#igCmqV8C2!qu3FRcrgQPP^
 {% endif %}

@@ -48,7 +48,7 @@ services:
   {%- if cookiecutter.use_celery == 'y' %}
 
   redis:
-    image: redis:5.0
+    image: redis:alpine
     container_name: redis
 
   celeryworker:
