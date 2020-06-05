@@ -80,6 +80,7 @@ THIRD_PARTY_APPS = [
 {%- if cookiecutter.use_drf == "y" %}
     "rest_framework",
     "rest_framework.authtoken",
+    "drf_yasg",
 {%- endif %}
 ]
 
