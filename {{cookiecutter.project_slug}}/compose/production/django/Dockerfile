@@ -13,7 +13,7 @@ FROM python:3.8-slim-buster
 
 ENV PYTHONUNBUFFERED 1
 
-RUN sudo sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list \
+RUN sed -i 's/deb.debian.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apt/sources.list \
   && sed -i 's|security.debian.org|mirrors.tuna.tsinghua.edu.cn|g' /etc/apt/sources.list \
   && apt-get update \
   # dependencies for building Python packages
